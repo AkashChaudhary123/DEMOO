@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Netflic</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    helllooo bhn ke lodee aa chuke ha ab machnege tabhiiii
+    <!-- Header -->
+    <header>
+        <div class="logo">Netflic</div>
+        <input type="text" placeholder="Search..." id="searchBar" onkeyup="searchFunction()">
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="movie-grid">
+            <div class="movie" data-title="Inception">
+                <img src="inception.jpg" alt="Inception">
+                <h3>Inception</h3>
+            </div>
+            <div class="movie" data-title="The Dark Knight">
+                <img src="dark_knight.jpg" alt="The Dark Knight">
+                <h3>The Dark Knight</h3>
+            </div>
+            <div class="movie" data-title="Interstellar">
+                <img src="interstellar.jpg" alt="Interstellar">
+                <h3>Interstellar</h3>
+            </div>
+            <!-- Add more movies as needed -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Netflic. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
